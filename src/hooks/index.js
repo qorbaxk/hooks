@@ -6,4 +6,5 @@ export { default as UseHover } from "./useHover/UseHover";
 export { default as UseConfirm } from "./useConfirm/UseConfirm";
 export { default as UsePreventLeave } from "./usePreventLeave/UsePreventLeave";
 export { default as UseBeforeLeave } from "./useBeforeLeave/UseBeforeLeave";
+export { default as UseFadeIn } from "./useFadeIn/UseFadeIn";
 
