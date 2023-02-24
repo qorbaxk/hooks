@@ -1,19 +1,13 @@
 import "./App.css";
-import { UseFullScreen } from "./hooks";
+import { UseNotification } from "./hooks";
 
 const App = () => {
-  const onFulls = (isFull) => {
-    console.log(isFull ? "full" : "small");
-  };
-  const { element, triggerFull, exitFull } = UseFullScreen(onFulls);
-
+  const triggerNotif = UseNotification("Can I steal your kimchi?", {
+    body: "I love kimchi don't you?",
+  });
   return (
     <div style={{ height: "1000vh" }}>
-      <div ref={element}>
-        <img src="https://i.ibb.co/R6RwNxx/grape.jpg" alt="grape" width="250" />
-        <button onClick={exitFull}>exit fullscreen</button>
-      </div>
-      <button onClick={triggerFull}>make fullscreen</button>
+      <button onClick={triggerNotif}>hello</button>
     </div>
   );
 };
